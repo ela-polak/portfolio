@@ -1,0 +1,182 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4efea;
+  color: #3a3a3a;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.ja {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ 
+}
+
+.ja img {
+margin-right:2rem;
+}
+
+
+.ja-text {
+padding-right:20px;
+}
+
+.ja h1 {
+  font-size: 3rem;
+  margin-bottom: 1em;
+}
+
+.ja h2 {
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+.ja p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 28px;
+  border: 1px solid #3a3a3a;
+  color: #c17f01;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #3a3a3a;
+  color: #fff;
+}
+
+/*I podstrona*/
+
+.section {
+  padding: 6rem 10%;
+}
+
+
+
+.nav {
+display: flex;
+background-color: #2c3e50;
+color: white;
+align-content: center;
+justify-content:flex-start;
+}
+
+.nav h2 {
+font-size: 1.8rem;
+padding:8px;
+}
+
+.nav a {
+font-size: 1.8rem;
+text-decoration: none;
+color: white;
+padding-left: 25px;
+}
+
+
+.portfolio-category {
+  margin-bottom: 4rem;
+}
+
+
+/* Siatka dla projektów */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.portfolio-category h3 {
+margin-top:10px;
+margin-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  cursor: pointer;/* zmiana kursora na rękę */
+  transition: transform 0.3s;
+  background-color:white;
+  height: 312px;
+  object-fit: contain;/* mieści cały obraz bez przycinania */
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+.card p {
+font-size: 0.7rem;
+text-align: center;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none; /*projekt 850 jest ukryty i pojawia się dopiero po kliknięciu na miniaturkę 550. */
+  position: fixed;/*lightbox zawsze wypełnia cały widoczny ekran, niezależnie od scrollowania*/
+  z-index: 1000;/*"na wierzchu wszystkiego z uwagi na dużą wartośc, dlatgeo pikazuje się na zdjeciem 550*/
+  top: 0;/*określa gdzie zaczyna się KONTENER lightboxa (czarne tło)*/
+  left: 0;/*określa gdzie zaczyna się KONTENER lightboxa (czarne tło)*/
+  width: 100%;/*Czarne tło zaczyna się w lewym górnym rogu i rozciąga na cały ekran (width: 100%; height: 100%)*/
+  height: 100%;
+  background: rgba(0,0,0,0.9);/*tło lightboxa to CZARNY kolor z 90% nieprzezroczystości*/
+                             /*To daje efekt przyciemnionego tła za zdjęciem */
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox:target { /*bez tego lightbox nie zadziała */
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 850px;
+  max-height: 90vh;
+}
+
+.grid2{
+ display: flex;
+justify-content: center;
+text-align:center;
+}
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+/*II podstrona*/
+
+.about p {
+  max-width: 700px;
+  margin-bottom: 1.5rem;
+}
+
+.skills ul {
+  list-style: none;
+  columns: 2;
+}
+
+.skills li {
+  margin-bottom: 0.8rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
