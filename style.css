@@ -211,11 +211,26 @@ text-align:center;
 
 
 @media (max-width: 768px) {
-  
- .grid { 
+  .grid { 
     grid-template-columns: 1fr; 
   }
-  
-  
- 
+  .ja {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .photo {
+    width: 100%;
+  }
+  .ja img {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .ja-text {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    align-self: auto;
+  }
 }
