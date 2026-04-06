@@ -32,6 +32,8 @@ h2,h3 {
 
 .ja img {
 margin-right:2rem;
+width: 50vw;        /* zajmuje zawsze 50% szerokości ekranu */
+height: auto;
 }
 
 
