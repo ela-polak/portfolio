@@ -225,6 +225,7 @@ text-align:center;
   .photo {
     width: 100%;
     max-width: 100%;
+    border: 2px solid red;
   }
 
   .ja img {
