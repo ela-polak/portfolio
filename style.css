@@ -176,8 +176,18 @@ text-align: center;
 }
 
 .lightbox img {
-  max-width: 850px;
+  max-width: 90vw;
   max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+   transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.lightbox img:active {
+  transform: scale(1.8);
+  cursor: zoom-out;
 }
 
 .grid2{
@@ -266,4 +276,11 @@ justify-content: center;
     text-align: center;
     align-self: auto;
   }
+  
+  .lightbox img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 }
