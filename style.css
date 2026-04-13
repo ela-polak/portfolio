@@ -169,6 +169,7 @@ text-align: center;
                              /*To daje efekt przyciemnionego tła za zdjęciem */
   align-items: center;
   justify-content: center;
+  overflow: auto;
 }
 
 .lightbox:target { /*bez tego lightbox nie zadziała */
@@ -183,6 +184,8 @@ text-align: center;
   object-fit: contain;
    transition: transform 0.3s ease;
   cursor: zoom-in;
+  display: block;
+  margin: auto;
 }
 
 .lightbox img:active {
@@ -277,5 +280,6 @@ justify-content: center;
     align-self: auto;
   }
   
+
 
 }
