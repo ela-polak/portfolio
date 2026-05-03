@@ -192,13 +192,15 @@ text-align: center;
   transform: scale(1.8);
   cursor: zoom-out;
 }
+ h3 {
+text-align:center;
+}
 
 .grid2{
  display: flex;
 justify-content: center;
 text-align:center;
 }
-
 
 
 .grid3 {
