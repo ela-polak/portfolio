@@ -223,8 +223,14 @@ text-align:center;
 
 video {
     display: block;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 550px;
+    max-height: 90vh;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 8px;
 }
+
 
 /*II podstrona*/
 
@@ -309,5 +315,7 @@ justify-content: center;
 .nav a {
 font-size: 1.2rem;
 }
-
+video {   
+    max-width: 450px;
+}
 }
