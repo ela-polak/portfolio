@@ -221,6 +221,11 @@ text-align:center;
   max-height: none;
 }
 
+video {
+    display: block;
+    margin: 0 auto;
+}
+
 /*II podstrona*/
 
 
