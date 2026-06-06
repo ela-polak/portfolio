@@ -196,12 +196,24 @@ text-align: center;
 text-align:center;
 }
 
-.grid2{
- display: flex;
-justify-content: center;
-text-align:center;
+.grid2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
+.grid2 .card {
+  width: 850px;
+}
+
+.grid2 .card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
 
 .grid3 {
   display: flex;
