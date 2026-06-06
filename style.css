@@ -231,6 +231,47 @@ video {
     border-radius: 8px;
 }
 
+/* === BROSZURA === */
+
+.brochure-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Okładki — połowa szerokości, wyśrodkowane */
+.brochure-single {
+  width: 50%;
+}
+
+.brochure-single img {
+  width: 85%;
+  height: auto;        /* obraz skaluje się do swojej naturalnej proporcji */
+  object-fit: unset;   /* wyłączamy stare ustawienie */
+  background-color: transparent;
+}
+
+/* Rozkładówki — pełna szerokość */
+.brochure-spread {
+  width: 100%;
+}
+
+.brochure-spread img {
+  width: 85%;
+  height: auto;
+  object-fit: unset;
+  background-color: transparent;
+}
+
+/* Lightbox rozkładówek */
+#broszura-spread1-full img,
+#broszura-spread2-full img,
+#broszura-spread3-full img {
+  max-width: 96vw;
+  max-height: 85vh;
+}
+
 
 /*II podstrona*/
 
