@@ -223,7 +223,7 @@ text-align:center;
 
 /* TYLKO dla eya.suszi */
 .grid3 img {
-  width: 550px;   /* większa miniaturka */
+  width: 700px;   /* większa miniaturka */
   height: auto;        /* usuwa blokadę 312px */
   max-width: 100%;
 }
@@ -233,6 +233,22 @@ text-align:center;
   max-height: none;
 }
 
+.grid4 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.grid4 img {
+  width: 700px;   /* większa miniaturka */
+  height: auto;        /* usuwa blokadę 312px */
+  max-width: 100%;
+}
+
+#landingpage-big {
+  max-width: 100vw;
+  max-height: none;
+}
 video {
     display: block;
     width: 100%;
